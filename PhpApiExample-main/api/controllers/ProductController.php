@@ -10,14 +10,13 @@ class ProductController {
         $this->productRepository = new ProductRepository();
     }
 
-    public function GetAllProduct() 
-    {
-        echo json_encode($this->productRepository->GetAllProduct() ?? [], JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT);
+    public function GetAllProduct() {
+    echo json_encode($this->productRepository->GetAllProduct());
     }
 
-    public function GetLatestPriceOfTheProduct() 
+    public function GetAllLatestProductPrice()
     {
-        echo json_encode($this->productRepository->GetLatestPriceOfTheProduct() ?? [], JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT);
+        echo json_encode($this->productRepository->GetAllLatestProductPrice() ?? [], JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT);
     }
 
     public function GetProductById($productId) 

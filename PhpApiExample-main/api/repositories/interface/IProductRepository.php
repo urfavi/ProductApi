@@ -2,6 +2,6 @@
 
 interface IProductRepository {
     public function GetAllProduct();
-    public function GetLatestPriceOfTheProduct();
+    public function GetAllLatestProductPrice();
     public function GetProductById($productId);
 }

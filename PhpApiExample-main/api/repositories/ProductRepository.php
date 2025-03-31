@@ -26,7 +26,7 @@ class ProductRepository implements IProductRepository {
     }
 
     // Retrieves all products along with their latest prices and product date
-    public function GetLatestPriceOfTheProduct() 
+    public function GetAllLatestProductPrice() 
     {
         $query = "SELECT 
                     Product.ProductId, 
